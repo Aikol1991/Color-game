@@ -1,8 +1,8 @@
 const squares = document.querySelector(".squares");
 const easyButton = document.querySelector(".easy");
+const mediumButton = document.querySelector(".medium");
 const hardButton = document.querySelector(".hard");
 const newButton = document.querySelector(".new");
-const answerDisplay = document.querySelector(".correct");
 const colorDisplay = document.querySelector(".color");
 
 const container = document.querySelector(".container");
@@ -60,8 +60,13 @@ easyButton.addEventListener("click", () => {
   createSquares();
 });
 
-hardButton.addEventListener("click", () => {
+mediumButton.addEventListener("click", () => {
   count = 6;
+  createSquares();
+});
+
+hardButton.addEventListener("click", () => {
+  count = 9;
   createSquares();
 });
 
